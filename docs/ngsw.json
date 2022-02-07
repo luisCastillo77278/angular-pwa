@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1644246166002,
+  "timestamp": 1644247060424,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -19,7 +19,12 @@
         "./runtime.2ccfaffa60907d9e.js",
         "./styles.666560ead8bb9107.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/code\\.jquery\\.com\\/jquery-3\\.2\\.1\\.slim\\.min\\.js",
+        "https:\\/\\/maxcdn\\.bootstrapcdn\\.com\\/bootstrap\\/4\\.0\\.0\\/js\\/bootstrap\\.min\\.js",
+        "https:\\/\\/cdnjs\\.cloudflare\\.com\\/ajax\\/libs\\/popper\\.js\\/1\\.12\\.9\\/umd\\/popper\\.min\\.js",
+        "https:\\/\\/use\\.fontawesome\\.com\\/releases\\/v5\\.15\\.4\\/css\\/all\\.css"
+      ]
     },
     {
       "name": "assets",
