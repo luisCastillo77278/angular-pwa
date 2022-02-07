@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1644247060424,
+  "timestamp": 1644249395146,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -20,6 +20,7 @@
         "./styles.666560ead8bb9107.css"
       ],
       "patterns": [
+        "https:\\/\\/maxcdn\\.bootstrapcdn\\.com\\/bootstrap\\/4\\.0\\.0\\/css\\/bootstrap\\.min\\.css",
         "https:\\/\\/code\\.jquery\\.com\\/jquery-3\\.2\\.1\\.slim\\.min\\.js",
         "https:\\/\\/maxcdn\\.bootstrapcdn\\.com\\/bootstrap\\/4\\.0\\.0\\/js\\/bootstrap\\.min\\.js",
         "https:\\/\\/cdnjs\\.cloudflare\\.com\\/ajax\\/libs\\/popper\\.js\\/1\\.12\\.9\\/umd\\/popper\\.min\\.js",
@@ -46,7 +47,22 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "data-api",
+      "patterns": [
+        "https:\\/\\/rickandmortyapi\\.com\\/api\\/character"
+      ],
+      "strategy": "freshness",
+      "maxSize": 5,
+      "maxAge": 3000000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
     "./assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "./assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
