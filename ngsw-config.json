@@ -33,5 +33,19 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "data-api",
+      "urls": [
+        "https://rickandmortyapi.com/api/character"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 5,
+        "maxAge": "50m",
+        "timeout": "5s"
+      }
+    }
   ]
 }
